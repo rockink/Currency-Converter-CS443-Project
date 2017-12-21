@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.rockink.curcon.individualCurrency.IndividualActivity">
+
+
+    <LinearLayout
+        android:id="@+id/activity_individual"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:accessibilityTraversalAfter="@+id/b"
+        android:background="#E8EAF6"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/individualInfoFragment"
+            android:name="com.rockink.curcon.individualCurrency.fragments.IndividualInfoFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            tools:layout="@layout/fragment_individual_info" />
+
+        <TextView
+            android:id="@+id/graphMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@color/white"
+            android:padding="8dp"
+            android:text="Loading Graph momentarily..."
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <fragment
+            android:id="@+id/graph_fragment"
+            android:name="com.rockink.curcon.individualCurrency.fragments.NinetyDaysCurrencyGraphFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            tools:layout="@layout/fragment_ninety_days_currency_graph" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Select Currency to COMPARE"
+            android:textSize="24sp" />
+
+        <fragment
+            android:id="@+id/listfragment"
+            android:name="com.rockink.curcon.dashBoardElems.ItemFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            tools:layout="@layout/fragment_item_list" />
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

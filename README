@@ -1,0 +1,14 @@
+This app requires runtime request for the use of internet and then access to the file.
+
+But, if we just click on green icon on android studio it should work.
+
+The gradle has been changed to newer version, which was caused by hw4. We stick with it
+because it worked for us.
+
+But basically, we did not do anything than just click on green arrow icon on the
+Android Studio.
+
+So, it should work properly.
+
+
+The project report is in ProjectReport.pdf file.

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/command"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:fontFamily="sans-serif-condensed"
+        android:onClick="findConversion"
+        android:padding="4dp"
+        android:text="FIND"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        tools:text="FIND" />
+
+        <EditText
+            android:id="@+id/convertNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/command"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/command"
+            android:layout_toStartOf="@+id/command"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="0"
+            android:inputType="number|numberDecimal"
+            android:text="0"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            tools:text="0" />
+
+    <TextView
+        android:id="@+id/rateA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="65dp"
+        android:padding="8dp"
+        android:text="FROM"
+        tools:text="FROM" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/toSpinner"
+        android:padding="8dp"
+        android:text="TO" />
+
+    <Spinner
+        android:id="@+id/toSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rateA"
+        android:layout_marginTop="93dp"
+        android:layout_toLeftOf="@+id/textView3"
+        android:layout_toStartOf="@+id/textView3"
+        android:padding="8dp" />
+
+    <Spinner
+        android:id="@+id/fromSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rateA"
+        android:layout_alignTop="@+id/rateA"
+        android:layout_toEndOf="@+id/rateA"
+        android:layout_toRightOf="@+id/rateA" />
+
+        <TextView
+            android:id="@+id/convertedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView3"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/rateA"
+            android:text="Select Currencies to Start"
+            android:textAlignment="center"
+            android:textSize="36sp" />
+
+    </RelativeLayout>
+
+</ScrollView>

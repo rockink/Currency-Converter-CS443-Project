@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical"
+    tools:context="com.rockink.curcon.MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/some_layout"
+            android:orientation="vertical">
+
+                <fragment
+                    android:id="@+id/convert"
+                    android:name="com.rockink.curcon.dashBoardElems.ConversionFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    tools:layout="@layout/convert" />
+
+                <fragment
+                    android:id="@+id/fragment"
+                    android:name="com.rockink.curcon.dashBoardElems.ItemFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:layout="@layout/fragment_item" />
+
+
+        </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>
