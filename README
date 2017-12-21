@@ -8,7 +8,15 @@ because it worked for us.
 But basically, we did not do anything than just click on green arrow icon on the
 Android Studio.
 
+In windows, we tried running this, and we got an error,
+Android SDK not found or sth.
+
+To solve this, we went tools -> Android -> Sync Project with Gradle Files.
+
+
 So, it should work properly.
+
+
 
 
 The project report is in ProjectReport.pdf file.
